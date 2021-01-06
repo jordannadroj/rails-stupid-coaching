@@ -1,11 +1,14 @@
 <div class="container">
   <h1>Stupid Coaching</h1>
 
-  <p>Ask your coach anything</p>
+  <p id="ask_text">Ask your coach anything</p>
+  <!-- <div class="input-group mb-3"> -->
+    <form class="input-group mb-3" action="/answer" method="get">
+      <input class="form-control" type="text" name="question">
+      <input class="btn btn-primary" type="submit" value="Ask!" id="button-addon2">
+    </form>
+  <!-- </div> -->
 
-  <form action="/answer" method="get">
-    <input type="text" name="question">
-    <input type="submit" value="Ask!">
-  </form>
+
 </div>
 
